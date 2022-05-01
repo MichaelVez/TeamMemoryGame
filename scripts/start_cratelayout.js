@@ -1,10 +1,8 @@
 //crate cards container
-//x.y.img
-let gameBored = document.querySelector(".game-bored");
+let gameBored = document.querySelector(".game-board");
 // let x_set = 4;
 // let y_set = 3;
 export function start_crateLayout(x, y) {
-  console.log("here");
   for (let i = 0; i < x; i++) {
     let row = document.createElement("div");
     row.classList.add("row");
