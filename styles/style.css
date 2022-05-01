@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-game {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #bbe1fa;
+}
+.massage {
+  font-size: 30px;
+  color: #3282b8;
+  text-align: center;
+  height: 10%;
+}
+.game-bored {
+  height: 70%;
+  width: 90%;
+  margin: auto;
+  border: 2px solid;
+  /* display:grid; */
+}
+.cont {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  width: 30%;
+  border: 2px solid;
+  height: 100%;
+  text-align: center;
+}
+.stats {
+  width: 70%;
+  height: 100%;
+  border: 2px solid;
+}
