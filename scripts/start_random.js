@@ -20,13 +20,3 @@ function assignCards(arr) {
     arr.splice(randomNum, 1);
   }
 }
-function removeFromArr(ar, num) {
-  let array = ar;
-  for (let i = 0; i < ar.length; i++) {
-    if (ar[i] === num) {
-      array.splice(i, 1);
-      break;
-    }
-  }
-  return array;
-}
