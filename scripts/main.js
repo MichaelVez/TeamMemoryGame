@@ -8,4 +8,4 @@
 //   stopTimer as stopTimer,
 // } from "./events-btns";
 import { start_crateLayout as crateBored } from "./start_cratelayout.js";
-crateBored(5, 5); //
+crateBored(4, 5); //param height and width
