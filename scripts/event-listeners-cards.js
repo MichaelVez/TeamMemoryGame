@@ -2,7 +2,7 @@ let stack = [];
 export function eventListenersCards() {
   let gameBored = document.querySelector(".game-board");
   gameBored.addEventListener("click", gameBorClick);
-  // todo timerStart()
+  //   timerStart()
 }
 function gameBorClick(event) {
   let lastCard = {
@@ -10,6 +10,7 @@ function gameBorClick(event) {
     y: event.target.getAttribute("data-y"),
     img: event.target.getAttribute("data-img"),
   };
+  console.log(lastCard);
   stack.push(lastCard);
   if (stack.length === 1) {
     selectCard(stack[0]);
@@ -20,6 +21,7 @@ function gameBorClick(event) {
       stack[0].getAttribute("data-img") === stack[1].getAttribute("data-img")
     ) {
       trueSelect(stack[0], stack[1]);
+      //   todo
     } else {
       //not a match
       selectCard(stack[1]);
@@ -43,6 +45,6 @@ function trueSelect(card1, card2) {
 }
 function checkWin() {
   //check if all cards are flipped
-  //win splash
   //stopTimer
+  //win splash
 }
