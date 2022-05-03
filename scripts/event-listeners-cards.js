@@ -9,10 +9,10 @@ export function eventListenersCards() {
   gameBored.addEventListener("click", gameBorClick);
 }
 function gameBorClick(event) {
-  //first time timer
-  startTimer();
   //check if a card is click
   if (event.target.classList.contains("cardBack")) {
+    //first time timer
+    startTimer();
     //get card name
     const clickedCard = event.target.previousElementSibling;
     //showcard
