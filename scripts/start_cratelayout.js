@@ -8,7 +8,7 @@ export function start_crateLayout(x, y) {
     for (let j = 0; j < y; j++) {
       let cell = document.createElement("div");
       cell.classList.add("cell");
-      cell.style.width = `${100 / y}%`;
+      cell.style.vmin = `${100 / y}%`;
       row.appendChild(cell);
       let cardFront = document.createElement("div");
       cardFront.classList.add("cardFront");

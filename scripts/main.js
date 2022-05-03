@@ -8,7 +8,7 @@
 //   stopTimer as stopTimer,
 // } from "./events-btns";
 let gridsizex = 4;
-let gridsizey = 3;
+let gridsizey = 4;
 
 import { start_crateLayout as crateBored } from "./start_cratelayout.js";
 crateBored(gridsizex, gridsizey); //param height and width
