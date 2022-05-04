@@ -22,5 +22,5 @@ export function startTimer() {
 
 export function stopTimer() {
   clearInterval(check);
-  check = null;
+  timerRunning = false;
 }
