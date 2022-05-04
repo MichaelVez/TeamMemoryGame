@@ -33,7 +33,7 @@ export function duplicatePokemon(pokemonsRandom) {
 } 
 
 //* total pokemons with duplicate for each Pokemon
-const totalPokemons = duplicatePokemon(pokemonsRandom)
+const totalPokemons = duplicatePokemon(pokemonsRandom);
 
 
 //* shuffle pokemons with sort and Math random
@@ -42,4 +42,4 @@ export function shufflePokemons(totalPokemons) {
 
 }
 
-export const shuffledPokemons = shufflePokemons(totalPokemons)
+export const shuffledPokemons = shufflePokemons(totalPokemons);
