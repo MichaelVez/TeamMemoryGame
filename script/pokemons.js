@@ -3,8 +3,8 @@ export const pokemons = [{
   image: "images/pikachu.png"
 },
 {
-  name: "Charmander",
-  image: "images/Charmander.png"
+  name: "Meowth",
+  image: "images/meowth.png"
 },
 {
   name: "Bulbasaur",
