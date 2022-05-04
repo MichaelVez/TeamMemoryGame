@@ -173,6 +173,7 @@ body {
   object-fit: contain;
 }
 
+/** Box Result */
 .boxResult {
   width: 65%;
   height: 550px;
@@ -230,4 +231,11 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.boxResult #msg {
+  font-size: 2.5rem;
+  color: rgb(28, 152, 28);
+  font-weight: bold;
+  
 }

@@ -1,21 +1,24 @@
-import { randomPokemonsFromArray, duplicatePokemon, shufflePokemons } from "./randomizeCards.js";
+import { randomPokemonsFromArray, duplicatePokemon, shufflePokemons, numOfPokemons } from "./randomizeCards.js";
 import { stopTimer, startTimer, timer } from "./timer.js";
 export const correctMatch = document.querySelector('#correct');
 export const UncorrectMatch = document.querySelector('#unCorrect');
 export const boxResult = document.querySelector('.boxResult');
+export const messageWin = document.querySelector("#msg");
 
-// counters for Match
+
+// counters 
 export let correctMatchCount = 0;
 export let unCorrectMatchCount = 0;
-export let lockBoard = false;
 export let winCounter = 0;
+export let lockBoard = false;
 
+
+//! check win
 function checkWin() {
   let msg = "You Won!";
-  if (winCounter === 12 / 2) {
+  if (winCounter === (numOfPokemons * 2) / 2) {
     stopTimer();
-    document.querySelector("#msg").classList.add("success");
-    return (document.querySelector("#msg").innerText = msg);
+    messageWin.innerText = msg;
   }
 };
 
@@ -107,6 +110,8 @@ export function newGame() {
   UncorrectMatch.innerText = unCorrectMatchCount;
   boxResult.style.border = "3px solid #2a75bb";
   boxResult.style.boxShadow = "2px 12px 12px 2px #2a75bb";
+  // Clear Winner Message
+  messageWin.innerText = '';
 
 }
 

@@ -2,7 +2,7 @@
 import { pokemons as arrPokemons } from "./pokemons.js";
 
 //* number of pokemons
-const numOfPokemons = 6;
+export const numOfPokemons = 6;
 
 //* A function that takes an array of objects (arrPokemons) and takes num-(numOfPokemons) objects randomly
 //*  and inserts them into a new array without duplicates
