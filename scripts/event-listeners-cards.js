@@ -1,6 +1,7 @@
 import { startTimer } from "./events-btns.js";
 let correctMatchCount = 0;
 let wrongMatchCount = 0;
+counter = 0;
 const correctMatch = document.querySelector(".rightgues");
 const wrongMatch = document.querySelector(".wrongguess");
 
@@ -29,6 +30,7 @@ function gameBorClick(event) {
         openCards[1].getAttribute("data-name")
       ) {
         //good match
+        counter++;
         openCards.forEach((card) => {
           card.classList.remove("openCard");
           card.style.pointerEvents = "none";
@@ -60,4 +62,12 @@ function checkWin() {
   //check if all cards are flipped
   //stopTimer
   //win splash
+  function checkWin() {
+    let msg = "You Won!";
+    if (counter === (gridsizex * gridsizey) / 2) {
+      stopTimer();
+      document.querySelector("#msg").classList.add("success");
+      return (document.querySelector("#msg").innerText = msg);
+    }
+  }
 }
