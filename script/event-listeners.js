@@ -8,6 +8,17 @@ export const boxResult = document.querySelector('.boxResult');
 export let correctMatchCount = 0;
 export let unCorrectMatchCount = 0;
 export let lockBoard = false;
+export let winCounter = 0;
+
+function checkWin() {
+  let msg = "You Won!";
+  if (winCounter === 12 / 2) {
+    stopTimer();
+    document.querySelector("#msg").classList.add("success");
+    return (document.querySelector("#msg").innerText = msg);
+  }
+};
+
 
 //! card Event (check Match)
 export function checkMatch(event) {
@@ -22,6 +33,8 @@ export function checkMatch(event) {
     if (openCards[0].getAttribute('data-pokemon-name') ===
       openCards[1].getAttribute('data-pokemon-name')) {
       //* Correct Match
+      winCounter++;
+      checkWin()
       openCards.forEach((card) => {
         card.classList.remove('openCard');
         card.style.pointerEvents = 'none';
