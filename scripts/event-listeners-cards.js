@@ -1,7 +1,7 @@
 import { startTimer } from "./events-btns.js";
 let correctMatchCount = 0;
 let wrongMatchCount = 0;
-counter = 0;
+let counter = 0;
 const correctMatch = document.querySelector(".rightgues");
 const wrongMatch = document.querySelector(".wrongguess");
 
@@ -53,12 +53,11 @@ function gameBorClick(event) {
         otherCard.nextElementSibling.style.display = "flex";
         otherCard.classList.remove("openCard");
       }
+      checkWin();
     }
-    checkWin();
   }
 }
 
-function checkWin() {
   //check if all cards are flipped
   //stopTimer
   //win splash
@@ -70,4 +69,4 @@ function checkWin() {
       return (document.querySelector("#msg").innerText = msg);
     }
   }
-}
+
