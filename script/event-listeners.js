@@ -19,6 +19,7 @@ function checkWin() {
   if (winCounter === (numOfPokemons * 2) / 2) {
     stopTimer();
     messageWin.innerText = msg;
+    winCounter = 0;
   }
 };
 
