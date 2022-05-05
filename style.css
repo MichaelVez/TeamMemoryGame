@@ -134,6 +134,7 @@ body {
 .card {
   position: relative;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: transform 1s;
   transform-origin: center right;
   /* cursor: pointer; */
