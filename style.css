@@ -21,6 +21,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  display: none;
 
 }
 
@@ -42,6 +43,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  display: none;
 }
 
 .cards {
@@ -232,6 +234,13 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+
+.boxResult #newGameBtn:hover {
+background-color: black;
+color: #fff;
 }
 
 .boxResult #msg {
