@@ -2,7 +2,7 @@
 import { pokemons as arrPokemons } from "./pokemons.js";
 
 //* number of pokemons
-const numOfPokemons = 6;
+export const numOfPokemons = 6;
 
 //* A function that takes an array of objects (arrPokemons) and takes num-(numOfPokemons) objects randomly
 //*  and inserts them into a new array without duplicates
@@ -33,7 +33,7 @@ export function duplicatePokemon(pokemonsRandom) {
 } 
 
 //* total pokemons with duplicate for each Pokemon
-const totalPokemons = duplicatePokemon(pokemonsRandom)
+const totalPokemons = duplicatePokemon(pokemonsRandom);
 
 
 //* shuffle pokemons with sort and Math random
@@ -42,4 +42,4 @@ export function shufflePokemons(totalPokemons) {
 
 }
 
-export const shuffledPokemons = shufflePokemons(totalPokemons)
+export const shuffledPokemons = shufflePokemons(totalPokemons);

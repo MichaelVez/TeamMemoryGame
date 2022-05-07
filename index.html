@@ -5,14 +5,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/startGame.css">
+  <link rel="stylesheet" href="style/responsive.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <title>Memory Card Pokemon</title>
 </head>
 
 <body>
+  <div class="startGame">
+    <div class="containerStartGame">
+      <div class="logoStartGame">
+        <img src="images/logo.png" alt="">
+      </div>
+      <button id="startGameBtn" class="btnStartScreen">Start Game</button>
+      <button id="howToPlayBtn" class="btnStartScreen">How To Play?</button>
+    </div>
+    <div class="boxHowToPlay">
+      <div class="boxHowToPlay-content">
+        <span class="closeBoxHowToPlay">&times;</span>
+        <h1>How to Play</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur labore, provident nesciunt repellendus
+          soluta, nobis ea perferendis recusandae voluptatum, sunt debitis ad officia id eligendi nisi. Sequi ipsa eos
+          voluptas alias praesentium perferendis esse vel numquam laborum dolor? Cupiditate esse et optio id sit saepe
+          mollitia odio a voluptate rem.
+        </p>
+      </div>
+    </div>
+  </div>
   <div class="container-game">
     <div class="top">
-    <div class="logo"><img src="images/logo.png" alt=""></div>
+      <div class="logo"><img src="images/logo.png" alt=""></div>
     </div>
     <div class="game-board">
       <div class="sideBar">
@@ -20,17 +43,21 @@
           <h1>Memory Game</h1>
           <h2 class="correctMatch">Correct Match: <span id="correct">0</span></h2>
           <h2 class="unCorrectMatch">Uncorrect Match: <span id="unCorrect">0</span></h2>
-          <button id="newGameBtn">New Game</button>
+          <h2 id="timer">00:00</h2>
+          <button id="newGameBoxResult" class="newGameBtn">New Game</button>
         </div>
         <div class="professor">
           <img src="images/professor.png" alt="">
         </div>
       </div>
-      <div class="cards"></div> 
+      <div class="cards"></div>
+      <div class="msg">
+        <div class="msg-content"></div>
+      </div>
     </div>
   </div>
-
   <script src="script/main.js" type="module"></script>
+
 </body>
 
 </html>
